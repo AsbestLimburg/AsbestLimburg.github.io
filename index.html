@@ -29,11 +29,13 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/tailwind.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+      <div class="container" style="flex-direction: row">
         <a class="navbar-brand" href="#page-top">Demattest</a>
         <button
           class="navbar-toggler"
@@ -61,6 +63,9 @@
             <!-- <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
             <li class="nav-item">
               <a class="nav-link" href="#afspraak">Boek een afspraak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offerte/">Offerteaanvraag</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -136,6 +141,40 @@
         </div>
       </div>
     </section>
+    <div class="px-4 mx-auto w-full md:px-24 lg:px-8 bg-white">
+      <div class="p-8 rounded shadow-xl sm:p-16 max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row">
+          <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+            <h2
+              class="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mb-10"
+            >
+              Contacteer ons
+            </h2>
+            <h2
+              class="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+            >
+              Regio Limburg
+            </h2>
+          </div>
+          <div class="lg:w-1/2">
+            <p class="mb-4 text-base text-gray-700">
+              Gehoord over hoe gevaarlijk asbest kan zijn? Daarom wil je
+              uitzoeken of je huis asbest heeft of niet, zodat je de nodige
+              voorzorgsmaatregelen kunt nemen om jezelf tegen blootstelling te
+              beschermen. Daarnaast is het ook zo dat een asbestcertificaat
+              verplicht is bij woning gebouwd vòòr 2001. Neem daarom zeker
+              contact met ons op.
+            </p>
+            <a
+              href="offerte/"
+              aria-label=""
+              class="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-500 hover:text-indigo-500"
+              >Vraag nu een offerte aan</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- About-->
     <section class="page-section" id="procedure">
       <div class="container">
@@ -247,7 +286,7 @@
               </div>
             </div>
           </li> -->
-          <li class="timeline-inverted">
+          <!-- <li class="timeline-inverted">
             <div class="timeline-image">
               <h4>
                 Woon verder
@@ -257,7 +296,7 @@
                 gerust hart!
               </h4>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </section>
@@ -297,108 +336,76 @@
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Contacteer ons</h2>
-          <h3 class="section-subheading text-muted">
+          <h3
+            class="section-subheading text-muted"
+            style="color: aeb3b7 !important"
+          >
             Neem contact met ons op voor al uw vragen over asbest!
           </h3>
         </div>
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-          <div class="row align-items-stretch mb-5">
-            <div class="col-md-6">
-              <div class="form-group">
-                <!-- Name input-->
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- Email address input-->
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="Your Email *"
-                  data-sb-validations="required,email"
-                />
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
-                </div>
-              </div>
-              <div class="form-group mb-md-0">
-                <!-- Phone number input-->
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="Your Phone *"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group form-group-textarea mb-md-0">
-                <!-- Message input-->
-                <textarea
-                  class="form-control"
-                  id="message"
-                  placeholder="Your Message *"
-                  data-sb-validations="required"
-                ></textarea>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  A message is required.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              To activate this form, sign up at
-              <br />
-              <a href="https://startbootstrap.com/solution/contact-forms"
-                >https://startbootstrap.com/solution/contact-forms</a
+        <div
+          class="px-4 pt-16 mx-auto w-full border-opacity-10 md:px-24 lg:px-8"
+        >
+          <div
+            class="max-w-6xl mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            <div class="sm:col-span-2">
+              <a
+                href="#page-top"
+                aria-label="Go home"
+                title="Company"
+                class="inline-flex items-center"
               >
+                <span
+                  class="text-xl font-bold tracking-wide text-white uppercase"
+                  >Demattest</span
+                ></a
+              >
+              <div class="mt-6 lg:max-w-sm">
+                <p class="text-sm text-white">
+                  Demattest is werkzaam in de ruime regio van Limburg
+                </p>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm col-span-2">
+              <p class="text-base font-bold tracking-wide text-white">
+                Contact
+              </p>
+              <div class="flex">
+                <p class="mr-1 text-white">Phone:</p>
+                <a
+                  href="tel:0000000000"
+                  aria-label="Ons telefoonnummer"
+                  title="Ons"
+                  class="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
+                  >+32 000 00 00 00</a
+                >
+              </div>
+              <div class="flex">
+                <p class="mr-1 text-white">Email:</p>
+                <a
+                  href="mailto:"
+                  aria-label="Onze email"
+                  title="Onze email"
+                  class="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
+                  >asbestlimburg@gmail.com</a
+                >
+              </div>
+              <div class="flex">
+                <p class="mr-1 text-white">Adres:</p>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ons adres"
+                  title="Ons adres"
+                  class="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
+                  >Straat 1, 0000 Stad
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">
-              Error sending message!
-            </div>
-          </div>
-          <!-- Submit Button-->
-          <div class="text-center">
-            <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
-              id="submitButton"
-              type="submit"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
     <!-- Footer-->
@@ -424,10 +431,10 @@
             <!-- TODO google maps en gsm -->
           </div>
           <div class="col-lg-4 text-lg-end">
-            <a class="link-dark text-decoration-none me-3" href="#!"
+            <!-- <a class="link-dark text-decoration-none me-3" href="#!"
               >Privacy Policy</a
             >
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a> -->
             <!-- TODO: Google maps of location, gsm nummer en mail -->
           </div>
         </div>

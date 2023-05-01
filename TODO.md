@@ -1,1 +1,6 @@
 - Linkedin?
+- Google maps en gsm in footer
+- Algemene voorwaarden?
+- Calendly: Outlook, Google, ...? Wil je Calendly? Wat heb je hier liefst van?
+- Adres in contact?
+- Demattest juist?

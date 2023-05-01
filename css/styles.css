@@ -8135,7 +8135,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #aeb3b7 !important;
 }
 
 .text-black-50 {
@@ -11806,6 +11806,10 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+}
+
+header.masthead-offerte {
+  height: 30vh;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
