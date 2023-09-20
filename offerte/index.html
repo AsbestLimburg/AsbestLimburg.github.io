@@ -137,7 +137,7 @@
                 placeholder="Plaats"
               />
             </div>
-            <div class="col-6 col-12-xsmall">
+            <div class="col-4 col-12-xsmall">
               <input
                 type="text"
                 name="gsm"
@@ -145,6 +145,15 @@
                 value=""
                 placeholder="Telefoon/Gsm-nummer"
               />
+            </div>
+            <div class="col-4 col-12-xsmall">
+              <select name="telefonisch_contact" id="telefonisch_contact">
+                <option value="" selected="true" disabled="true">
+                  Ik wil telefonisch gecontacteerd worden?
+                </option>
+                <option value="Ja">Ja</option>
+                <option value="Nee">Nee</option>
+              </select>
             </div>
             <div class="col-12 col-12-xsmall">
               <h3 class="test-lg text-center">
@@ -223,6 +232,29 @@
                 </option>
                 <option value="Ja">Ja</option>
                 <option value="Nee">Nee</option>
+              </select>
+            </div>
+            <div class="col-6 col-12-xsmall">
+              <select name="type_verwarming" id="type_verwarming">
+                <option value="" selected="true" disabled="true">
+                  Op welke manier wordt de woning verwarmd?
+                </option>
+                <option value="Mazout">Mazout</option>
+                <option value="Gas">Gas</option>
+                <option value="Elektrisch">Elektrisch</option>
+                <option value="Andere">Andere</option>
+              </select>
+            </div>
+            <div class="col-6 col-12-xsmall">
+              <select name="isolatie_leidingen" id="isolatie_leidingen">
+                <option value="" selected="true" disabled="true">
+                  Hoe zijn de leidingen van de verwarmingsketel en het warm
+                  water ge&iuml;soleerd?
+                </option>
+                <option value="Geen">Geen</option>
+                <option value="Mousse">Mousse</option>
+                <option value="Gipsisolatie">Gipsisolatie</option>
+                <option value="Andere">Andere</option>
               </select>
             </div>
             <div class="col-6 col-12-xsmall">
@@ -324,14 +356,18 @@
               aria-label="Email"
               ><i class="fas fa-envelope"></i
             ></a>
-            <!-- TODO google maps en gsm -->
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="tel:+32467016347"
+              aria-label="Phone"
+              ><i class="fas fa-phone"></i
+            ></a>
           </div>
           <div class="col-lg-4 text-lg-end">
             <!-- <a class="link-dark text-decoration-none me-3" href="#!"
               >Privacy Policy</a
             >
             <a class="link-dark text-decoration-none" href="#!">Terms of Use</a> -->
-            <!-- TODO: Google maps of location, gsm nummer en mail -->
           </div>
         </div>
       </div>
